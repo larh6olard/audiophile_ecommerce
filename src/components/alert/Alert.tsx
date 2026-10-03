@@ -15,7 +15,7 @@ const Alert = ({ message, onClose, duration = 3000 }: ToastProps) => {
   }, [onClose, duration]);
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 top-4 z-60 flex justify-center px-4 sm:top-6">
+    <div className="pointer-events-none fixed inset-x-0 top-6 z-60 flex justify-center px-4 sm:top-8">
       <div
         role="alert"
         aria-live="assertive"
