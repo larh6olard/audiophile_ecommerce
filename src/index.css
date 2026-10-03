@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+.home-bg {
+  background: url('/src/assets/images/home/image-header.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-clip: border-box;
+  height: 100vh;
+}
+
+@media screen and (width >= 48rem) {
+  .home-bg {
+    background: url('/src/assets/images/home/tablet/image-header.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    height: 100vh;
+  }
+}
+
+@media screen and (width >= 64rem) {
+  .home-bg {
+    background: url('/src/assets/images/home/large/image-hero.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    height: 100vh;
+  }
+}
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.brown-color-v {
+  background-color: #d87d4a;
+}
+
+.text-brown-v {
+  color: #D87D4A;
+}
+
+.speaker-zx {
+  background: url('/src/assets/images/home/image-speaker-zx7.jpg') no-repeat ;
+  background-size: cover;
+  background-position: center;
+  background-clip: border-box;
+  height: 70vh;
+}
+
+@media screen and (width >= 48rem) {
+  .speaker-zx {
+    background: url('/src/assets/images/home/tablet/image-speaker-zx7.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    height: 43vh;
+  }
+}
+
+@media screen and (width >= 64rem) {
+  .speaker-zx {
+    background: url('/src/assets/images/home/large/image-speaker-zx7.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    height: 70vh;
+    width: 85%;
+  }
+}
