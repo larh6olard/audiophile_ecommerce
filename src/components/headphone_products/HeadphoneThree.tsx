@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import woman from "/src/assets/images/headphone-xx59/desktop/image-gallery-1.jpg";
-import gadgets from "/src/assets/images/headphone-xx59/desktop/image-gallery-2.jpg";
-import markHeadphone from "/src/assets/images/headphone-xx59/desktop/image-gallery-3.jpg";
-import productOne from "/src/assets/images/headphone-mark-two/desktop/image-product-1.jpg";
-import productTwo from "/src/assets/images/headphone-mark-two/desktop/image-product-2.jpg";
-import productThree from "/src/assets/images/headphone-mark-two/desktop/image-product-3.jpg";
+import woman from "/images/headphone-xx59/desktop/image-gallery-1.jpg";
+import gadgets from "/images/headphone-xx59/desktop/image-gallery-2.jpg";
+import markHeadphone from "/images/headphone-xx59/desktop/image-gallery-3.jpg";
+import productOne from "/images/headphone-mark-two/desktop/image-product-1.jpg";
+import productTwo from "/images/headphone-mark-two/desktop/image-product-2.jpg";
+import productThree from "/images/headphone-mark-two/desktop/image-product-3.jpg";
 import DevicesLayout from "../category_templates/DevicesLayout";
 import GearLayout from "../category_templates/GearLayout";
 import type { Id } from "../../../convex/_generated/dataModel";

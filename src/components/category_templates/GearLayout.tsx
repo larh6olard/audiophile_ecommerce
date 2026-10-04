@@ -55,7 +55,7 @@ const GearLayout = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7 }}
-          src="/src/assets/images/home/large/image-best-gear.jpg"
+          src="/images/home/large/image-best-gear.jpg"
           alt=""
           className="rounded-lg lg:w-[50%]"
         />
@@ -68,7 +68,7 @@ const GearLayout = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7 }}
-        src="/src/assets/images/home/small/image-best-gear.jpg"
+        src="/images/home/small/image-best-gear.jpg"
         alt=""
         className="rounded-lg mb-7 w-full md:hidden"
       />
@@ -78,7 +78,7 @@ const GearLayout = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7 }}
-        src="/src/assets/images/home/tablet/image-best-gear.jpg"
+        src="/images/home/tablet/image-best-gear.jpg"
         alt=""
         className="rounded-lg mb-7 w-full hidden md:block lg:hidden"
       />

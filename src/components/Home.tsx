@@ -290,21 +290,21 @@ const Home: React.FC = () => {
             <motion.img
               variants={fadeLeft}
               transition={{ duration: 0.7 }}
-              src="/src/assets/images/home/image-earphones-yx1.jpg"
+              src="/images/home/image-earphones-yx1.jpg"
               alt=""
               className="rounded-lg w-full md:hidden"
             />
             <motion.img
               variants={fadeLeft}
               transition={{ duration: 0.7 }}
-              src="/src/assets/images/home/tablet/image-earphones-yx1.jpg"
+              src="/images/home/tablet/image-earphones-yx1.jpg"
               alt=""
               className="rounded-lg w-full md:w-[50%] hidden md:block lg:hidden"
             />
             <motion.img
               variants={fadeLeft}
               transition={{ duration: 0.7 }}
-              src="/src/assets/images/home/large/image-earphones-yx1.jpg"
+              src="/images/home/large/image-earphones-yx1.jpg"
               alt=""
               className="rounded-lg w-full md:w-[50%] hidden lg:block"
             />
@@ -359,7 +359,7 @@ const Home: React.FC = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7 }}
-              src="/src/assets/images/home/large/image-best-gear.jpg"
+              src="/images/home/large/image-best-gear.jpg"
               alt=""
               className="rounded-lg lg:w-[50%]"
             />
@@ -372,7 +372,7 @@ const Home: React.FC = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
-            src="/src/assets/images/home/small/image-best-gear.jpg"
+            src="/images/home/small/image-best-gear.jpg"
             alt=""
             className="rounded-lg mb-7 w-full md:hidden"
           />
@@ -382,7 +382,7 @@ const Home: React.FC = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
-            src="/src/assets/images/home/tablet/image-best-gear.jpg"
+            src="/images/home/tablet/image-best-gear.jpg"
             alt=""
             className="rounded-lg mb-7 w-full hidden md:block lg:hidden"
           />

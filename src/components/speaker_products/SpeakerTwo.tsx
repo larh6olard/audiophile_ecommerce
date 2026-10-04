@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import speakerImage from "/src/assets/images/speaker-zx7/desktop/image-gallery-1.jpg";
-import gadgets from "/src/assets/images/speaker-zx7/desktop/image-gallery-2.jpg";
-import speakerTwo from "/src/assets/images/speaker-zx7/desktop/image-gallery-3.jpg";
-import productOne from "/src/assets/images/headphone-mark-two/desktop/image-product-1.jpg";
-import productTwo from "/src/assets/images/headphone-mark-two/desktop/image-product-2.jpg";
-import productThree from "/src/assets/images/headphone-mark-two/desktop/image-product-3.jpg";
+import speakerImage from "/images/speaker-zx7/desktop/image-gallery-1.jpg";
+import gadgets from "/images/speaker-zx7/desktop/image-gallery-2.jpg";
+import speakerTwo from "/images/speaker-zx7/desktop/image-gallery-3.jpg";
+import productOne from "/images/headphone-mark-two/desktop/image-product-1.jpg";
+import productTwo from "/images/headphone-mark-two/desktop/image-product-2.jpg";
+import productThree from "/images/headphone-mark-two/desktop/image-product-3.jpg";
 import DevicesLayout from "../category_templates/DevicesLayout";
 import GearLayout from "../category_templates/GearLayout";
 import { useQuery } from "convex/react";
