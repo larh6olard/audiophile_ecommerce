@@ -45,7 +45,7 @@ const ShippingInfo: React.FC = () => {
               {...register("zipCode", { required: "zip-code is required" })}
               id="zip-code"
               className="w-full border border-gray-300 rounded-lg px-8 py-7 font-bold mt-2"
-              placeholder="10001"
+              placeholder="100010"
             />
             {errors.zipCode && (
               <p className="mt-1 text-sm text-red-500">
