@@ -126,8 +126,8 @@ const Layout: React.FC = () => {
       <nav
         className={`absolute top-22 left-[-60%] w-[60%] h-screen bg-[#191919] flex flex-col justify-start space-y-8 px-8 py-15 md:mt-4 
          text-white font-semibold text-lg tracking-wide transition-all duration-500 ease-in-out 
-         peer-checked:left-0 lg:hidden z-50 ${
-           isMenuOpen ? "translate-x-full back overflow-auto overscroll-auto" : "translate-x-0"
+         peer-checked:left-0 lg:hidden z-50 overflow-auto overscroll-auto ${
+           isMenuOpen ? "translate-x-full back" : "translate-x-0"
          }`}
       >
         <IoMdClose
