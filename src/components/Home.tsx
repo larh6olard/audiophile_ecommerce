@@ -197,7 +197,7 @@ const Home: React.FC = () => {
             <h3 className="text-4xl font-bold tracking-[1.29px]">
               ZX9 <br /> SPEAKER
             </h3>
-            <p className="text-[15px] z-10 px-20 md:px-40">
+            <p className="text-[15px] z-10 px-5">
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound
             </p>
