@@ -53,7 +53,7 @@ const Layout: React.FC = () => {
   };
 
   return (
-    <div className="font-manrope">
+    <div className="font-manrope overflow-x-clip">
       <header
         className={`bg-[#0E0E0E] flex justify-between items-center py-8 px-6 border-b border-gray-600 md:hidden`}
       >
@@ -69,7 +69,6 @@ const Layout: React.FC = () => {
             width="24px"
             fill="#fff"
             className="cursor-pointer focus:border focus:border-gray-400 focus:rounded focus:outline-2 focus:outline-[#d87d4a] focus:outline-offset-2 transition-colors"
-            onClick={handleMenuBtn}
           >
             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
           </svg>
@@ -106,7 +105,6 @@ const Layout: React.FC = () => {
               width="24px"
               fill="#fff"
               className="cursor-pointer focus:border focus:border-gray-400 focus:rounded focus:outline-2 focus:outline-[#d87d4a] focus:outline-offset-2 transition-colors"
-              onClick={handleMenuBtn}
             >
               <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
             </svg>
@@ -126,7 +124,7 @@ const Layout: React.FC = () => {
 
       {/* Click Menu Btn - Mobile Navigation */}
       <nav
-        className={`absolute top-22 left-[-50%] w-[50%] h-screen bg-[#191919] flex flex-col justify-start space-y-8 px-8 py-15 md:mt-4 
+        className={`absolute top-22 left-[-60%] w-[60%] h-screen bg-[#191919] flex flex-col justify-start space-y-8 px-8 py-15 md:mt-4 
          text-white font-semibold text-lg tracking-wide transition-all duration-500 ease-in-out 
          peer-checked:left-0 lg:hidden z-50 ${
            isMenuOpen ? "translate-x-full back" : "translate-x-0"
@@ -197,8 +195,9 @@ const Layout: React.FC = () => {
           onClick={() => setIsModalOpen(false)}
         ></div>
       )}
+
       <div className="bg-[#0E0E0E]">
-        <div className="border border-t-gray-400 lg:mx-35 md:mx-27"></div>
+        <div className="border border-t-gray-600 lg:mx-35 md:mx-27"></div>
       </div>
 
       <Outlet />
@@ -278,7 +277,7 @@ const Layout: React.FC = () => {
             </ul>
           </div>
 
-          <div className="md:grid md: grid-cols-7">
+          <div className="md:grid md:grid-cols-7">
             <span className="text-gray-500 block col-span-6">
               Copyright 2021. All Rights Reserved
             </span>

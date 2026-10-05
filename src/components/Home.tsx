@@ -111,11 +111,11 @@ const Home: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 0.75, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="opacity-75 text-[15px]  text-center lg:text-left md:mb-10 px-30 lg:px-0"
+            className="opacity-75 text-[15px]  text-center lg:text-left md:mb-10 "
           >
             Experience natural, lifelike audio and exceptional build{" "}
-            <br className="hidden md:block" /> quality made for the passionate
-            music <br className="hidden md:block" /> enthusiast
+            <br className="md:block hidden" /> quality made for the passionate
+            music <br className="md:block hidden" /> enthusiast
           </motion.p>
           <motion.a
             initial={{ opacity: 0, y: 20 }}
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
-          className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-3 md:space-y-0 md:px-10 md:mt-35 mt-30 px-5 font-manrope lg:mx-17"
+          className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-5 md:space-y-0 md:px-10 md:mt-30 mt-25 px-3 font-manrope lg:mx-17"
           id="products-preview"
         >
           {imagePreview.map((item) => (
@@ -166,7 +166,7 @@ const Home: React.FC = () => {
           ))}
         </motion.section>
 
-        <section className="mt-30 px-5 mb-10">
+        <section className="mt-20 px-2 mb-10">
           {/* Mobile and Tablet View */}
           <div className="relative brown-color-v w-[95%] mx-auto rounded-lg text-white flex flex-col justify-center items-center text-center space-y-7 font-manrope px-10 py-25 pb-20 md:pb-20 mb-10 lg:w-[85%] overflow-hidden lg:hidden">
             {/* Decorative SVG background */}
@@ -235,7 +235,7 @@ const Home: React.FC = () => {
                 transition={{ duration: 0.7 }}
                 src={homeSpeakerPreviewImg}
                 alt="speaker-image-preview"
-                className="w-[80%] mx-auto z-20 ml-5"
+                className="mx-auto z-20 ml-5"
               />
               <motion.div
                 variants={fadeRight}
@@ -327,7 +327,7 @@ const Home: React.FC = () => {
           </motion.div>
         </section>
 
-        <article className="mt-30 w-[95%] px-5 mx-auto mb-25 lg:w-[85%]">
+        <article className="mt-5 w-[95%] px-5 mx-auto mb-20 lg:w-[85%]">
           {/* Desktop View */}
           <motion.div
             variants={fadeLeft}
@@ -383,7 +383,7 @@ const Home: React.FC = () => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
             src="/images/home/tablet/image-best-gear.jpg"
-            alt=""
+            alt="image-best-gear.jpg"
             className="rounded-lg mb-7 w-full hidden md:block lg:hidden"
           />
 
@@ -393,7 +393,7 @@ const Home: React.FC = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
-            className="mt-20 mb-10 text-center font-manrope font-bold text-[28px] tracking-[1px] md:text-[40px] md:leading-10 md:tracking-[1.43px] lg:hidden"
+            className="mt-10 mb-10 text-center font-manrope font-bold text-[28px] tracking-[1px] md:text-[40px] md:leading-10 md:tracking-[1.43px] lg:hidden"
           >
             BRINGING YOU THE <br className="md:hidden" />{" "}
             <span className="text-[#d87d4a]">BEST</span>{" "}

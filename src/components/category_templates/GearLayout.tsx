@@ -24,7 +24,7 @@ const fadeRight = {
 
 const GearLayout = () => {
   return (
-    <article className="mt-30 w-[95%] px-5 mx-auto mb-25 lg:w-[85%]">
+    <article className="mt-15 w-full px-5 mx-auto mb-20">
       {/* Desktop View */}
       <motion.div
         variants={fadeLeft}
@@ -89,7 +89,7 @@ const GearLayout = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7 }}
-        className="mt-20 mb-10 text-center font-manrope font-bold text-[28px] tracking-[1px] md:text-[40px] md:leading-10 md:tracking-[1.43px] lg:hidden"
+        className="mt-15 mb-10 text-center font-manrope font-bold text-[28px] tracking-[1px] md:text-[40px] md:leading-10 md:tracking-[1.43px] lg:hidden"
       >
         BRINGING YOU THE <br className="md:hidden" />{" "}
         <span className="text-[#d87d4a]">BEST</span>{" "}

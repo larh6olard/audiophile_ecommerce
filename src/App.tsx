@@ -22,12 +22,12 @@ function App() {
       <CartProvider>
         <Toaster
           position="top-right"
-          toastOptions={{ className: "mt-15", duration: 1500 }}
+          toastOptions={{ className: "mt-5", duration: 1500 }}
         />
         <ScrollRestoration />
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+          <Route element={<Layout />}>
+            <Route index path="/" element={<Home />} />
             <Route path="/headphones-preview" element={<HeadphonesPage />} />
             <Route path="/speakers-preview" element={<SpeakersPage />} />
             <Route path="/earphones-preview" element={<EarphonesPage />} />

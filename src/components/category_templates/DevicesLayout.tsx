@@ -63,7 +63,7 @@ const DevicesLayout: React.FC = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.25 }}
-        className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-3 md:space-y-0 md:mt-35 mt-30 font-manrope"
+        className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-3 md:space-y-0 md:mt-20 mt-15 font-manrope"
       >
           {/* Headphones Card */}
           {products.map((product) => (
@@ -75,7 +75,7 @@ const DevicesLayout: React.FC = () => {
             >
               <img
                 src={product.image}
-                alt="headphone-image"
+                alt={product.name}
                 className="absolute left-1/2 -top-[45%] transform -translate-x-1/2 w-45"
               />
               <h4 className="mt-6 text-lg font-bold text-[15px] tracking-[1.07px]">
