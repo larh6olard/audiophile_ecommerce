@@ -39,8 +39,10 @@ const ShippingInfo: React.FC = () => {
             {" "}
             ZIP Code
             <input
-              {...register("zipCode", { required: "zip-code is required" })}
               type="text"
+              inputMode="numeric"
+              maxLength={6}
+              {...register("zipCode", { required: "zip-code is required" })}
               id="zip-code"
               className="w-full border border-gray-300 rounded-lg px-8 py-7 font-bold mt-2"
               placeholder="10001"
