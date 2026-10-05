@@ -99,7 +99,7 @@ const Checkout: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="min-h-screen bg-gray-100 p-10 lg:px-30 lg:pb-14"
+      className="min-h-screen bg-gray-100 px-5 py-5 md:px-10 lg:px-25 lg:pb-14"
     >
       {/* Go Back */}
       <motion.button

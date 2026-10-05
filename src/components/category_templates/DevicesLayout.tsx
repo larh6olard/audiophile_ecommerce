@@ -71,7 +71,7 @@ const DevicesLayout: React.FC = () => {
               variants={fadeUp}
               transition={{ duration: 0.6 }}
               key={product.id}
-              className="relative bg-[#F1F1F1] rounded-lg w-[95%] text-center pt-20 pb-10"
+              className="relative bg-[#F1F1F1] rounded-lg w-full text-center pt-20 pb-10"
             >
               <img
                 src={product.image}
