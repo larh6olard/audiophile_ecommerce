@@ -63,7 +63,7 @@ const DevicesLayout: React.FC = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.25 }}
-        className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-3 md:space-y-0 md:mt-20 mt-15 font-manrope"
+        className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-3 md:space-y-0 mt-20 font-manrope"
       >
           {/* Headphones Card */}
           {products.map((product) => (

@@ -19,7 +19,7 @@ const QuantitySelector: React.FC<{ productId: Id<"products"> }> = ({
         >
           -
         </button>
-        <p className="py-4 px-6 border-x border-x-gray-300 w-17 text-center">
+        <p className="py-4 px-6 border-x border-x-gray-300 text-center flex justify-center items-center w-17">
           {quantity}
         </p>
         <button
