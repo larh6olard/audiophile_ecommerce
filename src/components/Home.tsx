@@ -90,7 +90,8 @@ const Home: React.FC = () => {
   return (
     <div className="font-manrope">
       <main>
-        <section className="home-bg text-white flex flex-col items-center justify-center px-8 space-y-7 font-manrope lg:items-start lg:pl-35 lg:space-y-8">
+        {/* CHANGED: added min-h-dvh + py-16 so content can grow past the screen in landscape */}
+        <section className="home-bg min-h-dvh py-16 text-white flex flex-col items-center justify-center px-8 space-y-7 font-manrope lg:items-start lg:pl-35 lg:space-y-8">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -130,12 +131,14 @@ const Home: React.FC = () => {
         </section>
 
         {/* Producs Preview */}
+        {/* CHANGED: on landscape screens between md and lg (phones turned sideways),
+            stay stacked in a column so the EARPHONES card isn't squeezed off-screen */}
         <motion.section
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
-          className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-5 md:space-y-0 md:px-10 md:mt-30 mt-25 px-3 font-manrope lg:mx-17"
+          className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-5 md:space-y-0 md:max-lg:landscape:flex-col md:max-lg:landscape:space-x-0 md:max-lg:landscape:space-y-20 md:px-10 md:mt-30 mt-25 px-3 font-manrope lg:mx-17"
           id="products-preview"
         >
           {imagePreview.map((item) => (
