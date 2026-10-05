@@ -16,8 +16,6 @@ const PaymentDetails: React.FC = () => {
         Payment Details
       </h2>
 
-      <h3 className="mb-5 text-lg font-semibold md:hidden">Payment Method</h3>
-
       <div>
         <div className="md:grid md:grid-cols-2">
           <h3 className="mb-5 text-lg font-semibold sm:hidden md:block">
