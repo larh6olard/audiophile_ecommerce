@@ -70,17 +70,18 @@ const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
 
   const addToCart = useCallback(
     async (productId: Id<"products">, quantity: number) => {
-      if (quantity <= 0) {
-        await updateCart({ sessionId, productId, quantity });
-        toast.success("Product removed", { id: "action-toast" });
-        return;
-      }
 
-      toast.loading("Adding...", {
+      toast.loading("Loading...", {
         id: "action-toast",
       });
 
       try {
+        if (quantity <= 0) {
+          await updateCart({ sessionId, productId, quantity });
+          toast.success("Product removed", { id: "action-toast" });
+          return;
+        }
+
         await updateCart({ sessionId, productId, quantity });
 
         toast.success("Item added to cart!", { id: "action-toast" });
