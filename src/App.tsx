@@ -21,7 +21,7 @@ function App() {
     <div>
       <CartProvider>
         <Toaster
-          position="top-right"
+          position="bottom-right"
           toastOptions={{ className: "mt-5", duration: 1500 }}
         />
         <ScrollRestoration />

@@ -70,12 +70,18 @@ const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
 
   const addToCart = useCallback(
     async (productId: Id<"products">, quantity: number) => {
+      if (quantity <= 0) {
+        await updateCart({ sessionId, productId, quantity });
+        toast.success("Product removed", { id: "action-toast" });
+        return;
+      }
+
+      toast.loading("Adding...", {
+        id: "action-toast",
+      });
+
       try {
         await updateCart({ sessionId, productId, quantity });
-
-        toast.loading("Adding...", {
-          id: "action-toast",
-        });
 
         toast.success("Item added to cart!", { id: "action-toast" });
       } catch (error) {
@@ -107,7 +113,7 @@ const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
         return [...currentItems, { productId, quantity: 1 }];
       }
 
-      // decrease
+      // decrease logic
       if (!existing) return currentItems;
 
       return currentItems
