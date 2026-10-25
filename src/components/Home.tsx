@@ -130,6 +130,8 @@ const Home: React.FC = () => {
           </motion.a>
         </section>
 
+        <div id="products-preview" ></div>
+
         {/* Producs Preview */}
         {/* CHANGED: on landscape screens between md and lg (phones turned sideways),
             stay stacked in a column so the EARPHONES card isn't squeezed off-screen */}
@@ -139,7 +141,6 @@ const Home: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
           className="flex flex-col items-center justify-center space-y-20 md:flex-row md:space-x-5 md:space-y-0 md:max-lg:landscape:flex-col md:max-lg:landscape:space-x-0 md:max-lg:landscape:space-y-20 md:px-10 md:mt-30 mt-25 px-3 font-manrope lg:mx-17"
-          id="products-preview"
         >
           {imagePreview.map((item) => (
             <motion.div
